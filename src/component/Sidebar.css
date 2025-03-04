@@ -13,29 +13,34 @@
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #ccc;
+  overflow: hidden;
 }
 
 .profile-img {
   width: 50px;
   height: 50px;
-  border-radius: 50%; /* Makes the image round */
+  border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
   border: 2px solid #ddd;
-  cursor: pointer; /* Indicates it's clickable */
+  cursor: pointer;
 }
 
 .profile-info {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  overflow: hidden; /* Prevents content from overflowing */
 }
 
 .email, .designation {
   font-weight: bold;
   margin: 0;
   font-size: 14px;
-  cursor: pointer;
+  white-space: nowrap; /* Prevents wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds "..." if text is too long */
+  max-width: 150px; /* Adjust this to fit within the sidebar */
 }
 
 .designation {
@@ -44,11 +49,10 @@
 }
 
 .editable-input {
-  font-size: 14px;
-  font-weight: bold;
-  border: 1px solid #ddd;
-  padding: 2px;
-  border-radius: 5px;
   width: 100%;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   outline: none;
 }
