@@ -22,6 +22,7 @@
   object-fit: cover;
   margin-right: 10px;
   border: 2px solid #ddd;
+  cursor: pointer; /* Indicates it's clickable */
 }
 
 .profile-info {
