@@ -1,32 +1,18 @@
 import React from "react";
-import Subject from "./components/Subject";
 
 
+import Sidebar from "./component/Sidebar";
 
 function App() {
   return (
-    <div>
-      <Subject />
+    <div className="app-container">
+      <Sidebar />
+      <div className="main-content">
+        <h2>Welcome to Dashboard</h2>
+      </div>
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
